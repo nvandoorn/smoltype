@@ -1,0 +1,52 @@
+body {
+  background: #262A32;
+  color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+}
+
+.current-word_matched-segment {
+  color: green;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dashboard {
+  padding: 100px;
+  display: flex;
+}
+
+.dashboard_current-word {
+  font-size: 3em;
+}
+
+.dashboard_prev-word {
+  color: #575757;
+}
+
+.dashboard_next-word {
+  color: #7a7a7a;
+}
+
+.dashboard > * {
+  margin: 20px;
+  width: 300px;
+}
+
+#root {
+  display: flex;
+}
+
+.sidebar_active a {
+  color: teal;
+}
