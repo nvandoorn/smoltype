@@ -52,7 +52,10 @@
       state.set({ currentWordIndex: currentWordIndex + 1, currentMatchIndex: 0 })
     }
     else {
-      state.set({ currentMatchIndex: currentMatchPosition(currentWord) })
+      const currentMatchIndex = currentMatchPosition(currentWord)
+      const correctSegment = mainInput.value.slice(0, currentMatchIndex)
+      state.set({ currentMatchIndex })
+      mainInput.value = correctSegment
     }
   }
 
